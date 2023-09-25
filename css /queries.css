@@ -1,0 +1,170 @@
+/*  1rem = 1 em = 16px  */
+/******************************/
+/* Smaller desktops */
+/******************************/
+@media (max-width: 84rem) {   
+    .hero {
+        max-width: 120rem;
+    }
+
+    .heading-primary {
+        font-size: 4.4rem;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/******************************/
+/* Tablets (landscape)*/
+/******************************/
+@media (max-width: 75rem) {
+    html {
+        font-size: 50.25%;
+    }
+
+    .heading-secondary {
+        font-size: 3.6rem;
+    }
+
+    .heading-tertiary {
+        font-size: 2.4rem;
+    }
+
+    .grid {
+        column-gap: 4.8rem;
+        row-gap: 6.4rem;
+    }
+
+    .header {
+        padding: 0 3.2rem;
+    }
+
+    .hero {
+        gap: 4.8rem;
+    }
+
+    .main-nav-list {
+        gap: 3.2rem;
+    }
+
+    .testimonial-container {
+        padding: 4.8rem;
+    }
+}
+
+/******************************/
+/* Tablets */
+/******************************/
+@media (max-width: 55rem) {
+    html {
+        font-size: 50%;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 0 8rem;
+        gap: 6.4rem;
+    }
+
+    .hero-img {
+        width: 50%;
+    }
+
+    .hero-text-box, 
+    .hero-img-box {
+        text-align: center;
+    }
+
+    .logos img {
+        height: 2.4rem;
+    }
+
+    .step-number {
+        font-size: 7.4rem;
+    }
+
+    .meal-content {
+        padding: 2.4rem;
+    }
+
+    .section-testimonials {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .cta {
+        grid-template-columns: 3fr 2fr;
+    }
+    .cta-form {
+        grid-template-columns: 1fr;
+
+    }
+
+    .btn--form {
+        margin-top: 1rem;
+    }
+
+    /* mobile navigation */
+    .btn-mobile-nav {
+        display: block;
+        z-index: 9999;
+
+    }
+
+    .main-nav {
+        position: absolute;
+        background-color: pink;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100vh;
+        transform: translateX(100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* 1. Property we want to animate
+        2. Duration
+        3. type of animation (not specified- default : linear
+        transition-curve transition*/
+        /* transition: all 0.3s ease-out; */
+        /* hidden visually */
+        opacity: 0; 
+        /* making it unaccesible */
+        pointer-events: none;
+        /* hidden from screen readers */
+        visibility: hidden;
+    }
+
+    .open-nav .icon-mobile-nav[name="close-outline"] {
+        display: block;
+    }
+
+    .open-nav .icon-mobile-nav[name="menu-outline"] {
+        display: none;
+    }
+
+    .open-nav .main-nav{    
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        transform: translateX(0);
+
+    }
+
+    .main-nav-list {
+        flex-direction: column;
+        gap: 4.8rem;
+    }
+
+    .main-nav-link:link,
+    .main-nav-link:visited {
+        font-size: 3.2rem;
+    }
+    
+}
+
