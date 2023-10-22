@@ -1,0 +1,26 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "Chakifood",
+  "description": "Chakifood is a food delivery service that provides healthy meals to your doorstep.",
+  "url": "https://www.chakifood.com",
+  "logo": "https://www.chakifood.com/img/Chakifood.png",
+  "sameAs": [
+    "https://www.instagram.com/chakifood",
+    "https://twitter.com/chakifood",
+    "https://www.tiktok.com/chakifood"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "657 Hamilton St. 7th Floor",
+    "addressLocality": "Washington",
+    "addressRegion": "DC",
+    "postalCode": "10102",
+    "addressCountry": "USA"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+202-555-0176",
+    "email": "hello@chakifood.com"
+  }
+}
