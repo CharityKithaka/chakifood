@@ -7,25 +7,24 @@ Font sizes:
 
 Universal selector - global reset  */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 /* 1rem = 16 pixels unless set otherwise as below 
 set it to 10pixels 
 10px /16px = 0.625 = 62.5% */
 html {
-    font-size: 62.5%;
-    overflow-x: hidden;
+  font-size: 62.5%;
+  overflow-x: hidden;
 }
 
-
 body {
-    font-family: sans-serif;
-    line-height: 1;
-    font-weight: 400;
-    color: #333;
-    overflow-x: hidden;
+  font-family: sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #333;
+  overflow-x: hidden;
 }
 
 /******************************/
@@ -33,183 +32,179 @@ body {
 /******************************/
 /* Add the grid */
 .grid {
-    display: grid;
-    column-gap: 6.4rem;
-    row-gap: 9.6rem;
-
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
 }
 
 /* center the page */
 .container {
-    max-width: 120rem;
-    margin: 0 auto;
-    padding: 0 3.2rem;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
 }
 
 /* food feature section */
 .container:not(:last-child) {
-    margin-bottom: 9.6rem;
+  margin-bottom: 9.6rem;
 }
 
 /* variation of the main grid */
 .grid--2-cols {
-    grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .grid--3-cols {
-    grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .grid--4-cols {
-    grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .grid--5-cols {
-    grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .grid--center-y {
-    align-items: center;
+  align-items: center;
 }
 
 .heading-primary,
 .heading-secondary,
 .heading-tertiary {
-    font-weight: 600;
-    letter-spacing: -0.5px;
-    color: #333;   
-
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  color: #333;
 }
 /* H1 */
 .heading-primary {
-    font-size: 5.2rem;
-    line-height: 1.05;
-    margin-bottom: 3.2rem; 
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
 }
 
 /* H2 */
 .heading-secondary {
-    font-size: 4.4rem;
-    line-height: 1.4;
-    margin-bottom: 9.6rem;
+  font-size: 4.4rem;
+  line-height: 1.4;
+  margin-bottom: 9.6rem;
 }
 
 /* H3 */
 .heading-tertiary {
-    font-size: 3rem;
-    line-height: 1.2;
-    margin-bottom: 3.2rem;
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
 }
 /* span element */
 .subheading {
-    display: block;
-    font-size: 1.8rem;
-    font-weight: 500;
-    color: #824d1e;
-    text-transform: uppercase;
-    margin-bottom: 1.6rem;
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #824d1e;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
 }
-
-
 
 /* buttons on hero section */
 .btn,
-.btn:link, 
+.btn:link,
 .btn:visited {
-   display: inline-block;
-   font-size: 2rem;
-   padding: 1.6rem 3.2rem;
-   border-radius: 10px;
-   text-decoration: none;
-   transition: background-color 0.3s;
-   font-weight: 600;
-   /* only for .btn */
-   border: none;
-   cursor: pointer;
+  display: inline-block;
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  font-weight: 600;
+  /* only for .btn */
+  border: none;
+  cursor: pointer;
 }
 
 /* (start eating well) button */
-.btn--full:link, 
+.btn--full:link,
 .btn--full:visited {
-    background-color: #e98b38;
-    color: #fff;
+  background-color: #e98b38;
+  color: #fff;
 }
 
-.btn--full:hover, 
+.btn--full:hover,
 .btn--full:active {
-    background-color: #3e2712;
+  background-color: #3e2712;
 }
 
 /* (learn more) button */
 .btn--outline:link,
 .btn--outline:visited {
-    background-color: #fff;
-    color: #333;
+  background-color: #fff;
+  color: #333;
 }
 
 .btn--outline:hover,
 .btn--outline:active {
-    background-color: #ab9d9d;
+  background-color: #ab9d9d;
 }
 
 /* (all recipe) button */
 .link:link,
 .link:visited {
-    text-decoration:none;
-    color: #e98b38;
-    border-bottom: 1px solid currentColor;
-    padding-bottom: 2px;
-    display: inline-block; 
-    transition: all 0.3s; 
+  text-decoration: none;
+  color: #e98b38;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  display: inline-block;
+  transition: all 0.3s;
 }
 
 .link:hover,
 .link:active {
-    color: #ab9d9d;
-    border-bottom: 1px solid transparent;
+  color: #ab9d9d;
+  border-bottom: 1px solid transparent;
 }
 
 /* sign-up button */
 .btn--form {
-    background-color:#824d1e;
-    color: #fdf2e9;
-    align-self: end;
-    padding: 1.2rem;
+  background-color: #824d1e;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
 }
 
 .btn--form:hover {
-    background-color:#3e2712;
+  background-color: #3e2712;
 }
- /* special helper class that is reusable and 
+/* special helper class that is reusable and 
  generic for the multiple elements to give space on right side 
  We add important to give it the highest priority */
- .margin-right-sm {
-    margin-right: 1.6rem !important; 
+.margin-right-sm {
+  margin-right: 1.6rem !important;
 }
 
 /* helper class */
 .margin-bottom-md {
-    margin-bottom: 4.8rem !important;
+  margin-bottom: 4.8rem !important;
 }
 
 /* 3rd part in the meal's card */
 .list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 1.6rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
 }
 
 .list-icon {
-    width: 3rem;
-    height: 3rem;
-    color:#e98b38;
+  width: 3rem;
+  height: 3rem;
+  color: #e98b38;
 }
 
 .list-item {
-    font-size: 1.8rem;
-    display: flex;
-    align-items: center;
-    gap: 1.6rem;
-    line-height: 1.2rem;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  line-height: 1.2rem;
 }

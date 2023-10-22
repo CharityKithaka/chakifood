@@ -7,7 +7,7 @@ yearEl.textContent = currentYear;
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header");
 
-btnNavEl.addEventListener("click", function () {
+btnNavEl.addEventListener("click", () => {
   headerEl.classList.toggle("open-nav");
 });
 
@@ -17,9 +17,9 @@ const allLinks = document.querySelectorAll("a:link");
 // cleaner way is using event deligation which you can try out
 
 // for each link
-allLinks.forEach(function (link) {
+allLinks.forEach((link) => {
   // add event listener to each link
-  link.addEventListener("click", function (e) {
+  link.addEventListener("click", (e) => {
     // turn off the default behaviour and implement your own
     e.preventDefault();
     // get the href attribute out of the link that was clicked
@@ -32,7 +32,7 @@ allLinks.forEach(function (link) {
       });
     }
     // if the href is not # and starts with #
-    //then scroll to the section with the id that matches the href
+    // then scroll to the section with the id that matches the href
     if (href !== "#" && href.startsWith("#")) {
       // get the section element
       const sectionEl = document.querySelector(href);
@@ -54,22 +54,23 @@ const sectionHeroEl = document.querySelector(".section-hero");
 // get the section about element
 // what we want to happen when the section about element is intersected
 // we want to remove the sticky class from the header element
-const obs = new IntersectionObserver(function (entries) {
+const obs = new IntersectionObserver(
+  (entries) => {
     // get the first entry
     const ent = entries[0];
     // if the entry is intersecting
     if (ent.isIntersecting === false) {
-        // add the sticky class to the header element
-        document.body.classList.add("sticky");
+      // add the sticky class to the header element
+      document.body.classList.add("sticky");
     }
 
     // if the entry is not intersecting
     if (ent.isIntersecting) {
-        // remove the sticky class from the header element
-        document.body.classList.remove("sticky");
+      // remove the sticky class from the header element
+      document.body.classList.remove("sticky");
     }
-}, 
-{
+  },
+  {
     // observe elements scrolling through the viewport
     // inside the entire browser window
     root: null,
@@ -77,6 +78,7 @@ const obs = new IntersectionObserver(function (entries) {
     threshold: 0,
     // we will have an event as soon as 80px of the hero section is inside the viewport
     rootMargin: "-80px",
-});
+  },
+);
 // observe the section hero element
 obs.observe(sectionHeroEl);
