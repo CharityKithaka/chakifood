@@ -100,6 +100,7 @@
   .cta {
     grid-template-columns: 3fr 2fr;
   }
+
   .cta-form {
     grid-template-columns: 1fr;
   }
@@ -223,15 +224,45 @@
   }
 
   .cta {
-    grid-template-columns: 1fr;
+    display: flex;
   }
 
   .cta-text-box {
-    padding: 3.2rem;
+    padding: 0.4rem;
   }
 
   .cta-img-box {
-    height: 32rem;
-    grid-row: 1;
+    height: 16rem;
+  }
+
+  .cta-form {
+    display: flex;
+    flex-direction: column;
+    column-gap: 1.6rem;
+    row-gap: 1.2rem;
+    max-width: 100%;
+  }
+
+  .cta-form label {
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .grid--footer {
+    grid-template-columns: 1fr;
+  }
+
+  .footer {
+    padding: 2rem 0;
+  }
+
+  .footer-heading {
+    font-size: 1.2rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+    gap: 1.2rem;
   }
 }
